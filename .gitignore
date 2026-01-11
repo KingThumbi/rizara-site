@@ -1,0 +1,6 @@
+# Node modules or local dev files (if any)
+node_modules/
+.DS_Store
+*.log
+.env
+
