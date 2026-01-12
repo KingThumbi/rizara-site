@@ -1,102 +1,227 @@
-/* ===============================
-   Root Brand Colors
-================================ */
+/* ==========================================
+   RIZARA MEATS - GLOBAL VARIABLES
+   ========================================== */
 :root {
-  --brand-green: #1e4d2b;
-  --brand-gold: #ffd700;
+  --brand-green: #006400;   /* Dark Green */
+  --brand-gold: #ffd700;    /* Gold */
+  --text-dark: #1a1a1a;
+  --bg-light: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --rounded: 0.75rem;
 }
 
-/* ===============================
-   Buttons
-================================ */
-.btn {
+/* ==========================================
+   GLOBAL ELEMENTS
+   ========================================== */
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--brand-green);
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+p, li, input, textarea, select {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   HEADER & NAVIGATION
+   ========================================== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: var(--brand-green);
+  color: white;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+header nav a {
+  color: white;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: var(--brand-gold);
+}
+
+header .btn {
+  background-color: var(--brand-gold);
+  color: var(--brand-green);
+  padding: 0.5rem 1rem;
+  border-radius: var(--rounded);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+header .btn:hover {
+  background-color: #ffec70;
+}
+
+/* ==========================================
+   LOGO
+   ========================================== */
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+/* ==========================================
+   HERO TEXT
+   ========================================== */
+.hero-text {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--brand-green);
+  text-align: center;
+}
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+.btn, .hero-button {
+  display: inline-block;
   background-color: var(--brand-green);
   color: white;
   padding: 0.75rem 1.5rem;
-  border-radius: 0.75rem;
+  border-radius: var(--rounded);
   font-weight: 600;
+  text-align: center;
+  cursor: pointer;
   transition: all 0.3s ease;
-  display: inline-block;
+  text-decoration: none;
 }
 
-.btn:hover {
+.hero-button:hover, .btn:hover {
   background-color: var(--brand-gold);
   color: var(--brand-green);
 }
 
-.hero-button {
-  font-size: 1.1rem;
-  padding: 0.85rem 2rem;
-  border-radius: 1rem;
+/* ==========================================
+   FORMS
+   ========================================== */
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: var(--rounded);
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ===============================
-   Cards
-================================ */
+.input-field:focus {
+  border-color: var(--brand-green);
+  box-shadow: 0 0 6px var(--brand-green);
+}
+
+/* ==========================================
+   CARDS
+   ========================================== */
 .card {
-  background: #fff;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  background-color: var(--bg-light);
+  border-radius: var(--rounded);
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 18px var(--shadow);
 }
 
-/* ===============================
-   Hero Image
-================================ */
-.rounded-xl-custom {
-  border-radius: 1.5rem;
-}
-
-.shadow-lg-custom {
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-
-/* ===============================
-   Typography
-================================ */
-.hero-text {
-  font-family: Georgia, serif;
-}
-
-h1, h2, h3, h4 {
-  color: var(--brand-green);
-  font-weight: bold;
-}
-
-/* ===============================
-   Floating Admin Button
-================================ */
-.admin-float-btn {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
   background-color: var(--brand-green);
-  color: #fff;
-  padding: 0.75rem 1.25rem;
-  border-radius: 999px;
-  font-weight: 600;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  z-index: 1000;
-  transition: all 0.3s ease;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.95rem;
 }
 
-.admin-float-btn:hover {
+/* ==========================================
+   FLOATING ADMIN LOGIN
+   ========================================== */
+.admin-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--brand-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--rounded);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.admin-float:hover {
   background-color: var(--brand-gold);
   color: var(--brand-green);
   transform: translateY(-2px);
 }
 
-/* ===============================
-   Responsive
-================================ */
-@media (max-width: 768px) {
-  .hero-text {
-    font-size: 2.2rem;
-  }
+/* ==========================================
+   TABLES / LISTS
+   ========================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+/* ==========================================
+   CUSTOM CLASSES
+   ========================================== */
+.rounded-xl-custom {
+  border-radius: 1rem;
+}
+
+.shadow-lg-custom {
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.max-w-lg {
+  max-width: 36rem;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }

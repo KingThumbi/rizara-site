@@ -1,117 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rizara Meats | Halal Meat and Livestock</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rizara Meats | Premium Halal Meat & Livestock</title>
 
-  <!-- Tailwind -->
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body class="font-sans text-gray-900 bg-white">
 
-<body class="font-sans text-gray-900">
-
-<!-- Navbar -->
-<header class="bg-[var(--brand-green)] text-white shadow-md">
-  <div class="container mx-auto flex justify-between items-center py-4 px-6">
-    <h1 class="text-2xl font-bold">Rizara Meats</h1>
-    <nav class="space-x-6">
-      <a href="index.html" class="hover:text-[var(--brand-gold)] font-semibold">Home</a>
-      <a href="about.html" class="hover:text-[var(--brand-gold)]">About</a>
-      <a href="packages.html" class="hover:text-[var(--brand-gold)]">Products</a>
-      <a href="contact.html" class="hover:text-[var(--brand-gold)]">Contact</a>
-      <a href="orders.html" class="hover:text-[var(--brand-gold)] font-semibold">Place Order</a>
+<!-- HEADER -->
+<header class="bg-[var(--brand-green)] text-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto flex flex-wrap justify-between items-center px-6 py-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/images/logo.png" alt="Rizara Meats Logo" class="logo h-10 w-auto">
+      <span class="text-xl font-bold">Rizara Meats</span>
+    </a>
+    <nav class="flex flex-wrap gap-4 items-center">
+      <a href="index.html" class="hover:text-[var(--brand-gold)] font-medium">Home</a>
+      <a href="about.html" class="hover:text-[var(--brand-gold)] font-medium">About</a>
+      <a href="packages.html" class="hover:text-[var(--brand-gold)] font-medium">Products</a>
+      <a href="contact.html" class="hover:text-[var(--brand-gold)] font-medium">Contact</a>
+      <a href="orders.html" class="bg-[var(--brand-gold)] text-[var(--brand-green)] px-4 py-2 rounded font-semibold hover:bg-yellow-400">Place Order</a>
     </nav>
   </div>
 </header>
 
-<!-- Hero Section -->
+<!-- HERO SECTION -->
 <section class="relative bg-gray-50">
-  <div class="container mx-auto px-6 py-20 flex flex-col lg:flex-row items-center">
+  <div class="container mx-auto px-6 py-20 flex flex-col lg:flex-row items-center gap-10">
     <div class="lg:w-1/2">
-      <h2 class="hero-text text-4xl lg:text-5xl font-bold mb-4">
-        Premium Halal Meat for GCC and Local Markets
-      </h2>
-      <p class="mb-6 text-lg">
-        Rizara Meats delivers ethically sourced, traceable, and high-quality halal meat.
-        Connecting farmers, buyers, and investors to a sustainable livestock ecosystem.
-      </p>
-
-      <div class="mt-6">
-        <a href="orders.html" class="btn hero-button px-6 py-3 text-lg">
-          Place Your Order
-        </a>
-      </div>
+      <h2 class="hero-text text-4xl lg:text-5xl font-bold mb-4">Premium Halal Meat for GCC and Local Markets</h2>
+      <p class="mb-6 text-lg">Rizara Meats delivers ethically sourced, traceable, and halal-certified meat. Connecting farmers, buyers, and investors into a sustainable livestock ecosystem.</p>
+      <a href="orders.html" class="btn hero-button">Place Your Order</a>
     </div>
-
-    <div class="lg:w-1/2 mt-10 lg:mt-0">
-      <img
-        src="assets/images/hero-livestock.jpg"
-        alt="Livestock"
-        class="rounded-xl-custom shadow-lg-custom"
-      />
+    <div class="lg:w-1/2">
+      <img src="assets/images/hero-livestock.jpg" alt="Halal livestock farming" class="rounded-xl-custom shadow-lg-custom">
     </div>
   </div>
 </section>
 
-<!-- Features -->
+<!-- FEATURES -->
 <section class="container mx-auto px-6 py-16 grid lg:grid-cols-3 gap-12">
   <div class="card text-center">
-    <img src="assets/images/traceability.png" class="mx-auto mb-4 w-20" />
+    <img src="assets/images/traceability.png" class="mx-auto mb-4 w-20" alt="Traceability">
     <h3 class="text-xl font-bold mb-2">Full Traceability</h3>
-    <p>Every animal is tracked from farm to processing for full transparency.</p>
+    <p>Every animal is tracked from farm to processing for transparency and halal compliance.</p>
   </div>
-
   <div class="card text-center">
-    <img src="assets/images/farmers.png" class="mx-auto mb-4 w-20" />
+    <img src="assets/images/farmers.png" class="mx-auto mb-4 w-20" alt="Farmers">
     <h3 class="text-xl font-bold mb-2">Empowering Farmers</h3>
-    <p>We support farmers with training, resources, and access to markets.</p>
+    <p>We support farmers with training, financing access, and premium markets.</p>
   </div>
-
   <div class="card text-center">
-    <img src="assets/images/investors.png" class="mx-auto mb-4 w-20" />
+    <img src="assets/images/investors.png" class="mx-auto mb-4 w-20" alt="Investors">
     <h3 class="text-xl font-bold mb-2">Investor Opportunities</h3>
-    <p>Invest in sustainable halal meat production and livestock value chains.</p>
+    <p>Invest responsibly in sustainable halal meat production.</p>
   </div>
 </section>
 
-<!-- Donors & Investors -->
+<!-- PARTNERS -->
 <section class="bg-gray-100 py-16 text-center">
   <h3 class="text-3xl font-bold hero-text mb-6">Donors & Investors</h3>
-  <p class="mb-6 text-lg">
-    Join us in transforming the livestock sector through ethical investment.
-  </p>
+  <p class="mb-6 text-lg">Join us in transforming the halal livestock value chain.</p>
   <a href="contact.html" class="btn hero-button">Become a Partner</a>
 </section>
 
-<!-- Quick Contact -->
+<!-- CONTACT -->
 <section class="bg-gray-200 py-12 text-center">
   <h3 class="text-2xl font-bold mb-4">Reach Us Today</h3>
-  <p>Phone: +254700912362 / +254780912362</p>
-  <p>
-    Email:
-    <a href="mailto:sales@rizara.co.ke" class="text-[var(--brand-green)] underline">
-      sales@rizara.co.ke
-    </a>
-  </p>
-  <p class="mb-4">P.O BOX 25399-00100, GPO Nairobi</p>
-  <a href="contact.html" class="btn hero-button">Contact Now</a>
+  <p>📞 +254 700 912 362 / +254 780 912 362</p>
+  <p>📧 <a href="mailto:sales@rizara.co.ke" class="text-[var(--brand-green)] underline">sales@rizara.co.ke</a></p>
 </section>
 
+<!-- FOOTER -->
 <footer class="bg-[var(--brand-green)] text-white py-6 text-center">
   &copy; 2026 Rizara Meats. All rights reserved.
 </footer>
 
-<!-- ✅ Floating Admin Login Button -->
-<a
-  href="https://backend.rizara.co.ke/login"
-  class="admin-float-btn"
-  title="Admin Login"
->
-  Admin Login
+<!-- FLOATING ADMIN LOGIN -->
+<a href="https://backend.rizara.co.ke/login" class="admin-float fixed bottom-6 right-6 bg-[var(--brand-green)] text-white px-4 py-2 rounded shadow hover:bg-[var(--brand-gold)] transition" title="Admin Login">
+  Admin
 </a>
 
 </body>
