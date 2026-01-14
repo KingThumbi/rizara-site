@@ -1,96 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Contact Rizara | Partnerships & Supply Inquiries</title>
-  <meta name="description" content="Contact Rizara for partnerships, livestock onboarding, bulk meat supply, or investment discussions.">
+  <title>Contact Rizara | Partnerships, Orders & Export Inquiries</title>
+  <meta name="description" content="Contact Rizara Meats for bulk halal meat orders, partnerships, or export inquiries. Connect with us to source ethically raised goat and sheep meat for GCC and international markets." />
+  <link rel="canonical" href="https://rizara.co.ke/contact.html" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 
-  <link rel="canonical" href="https://rizara.co.ke/contact.html">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-30K73KRYT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-30K73KRYT2');
+  </script>
 
-  <!-- Google reCAPTCHA v3 -->
+  <!-- reCAPTCHA -->
   <script src="https://www.google.com/recaptcha/api.js?render=6Lc1hEksAAAAANv17YHE_2g4smNZT4UsdjrT9SL4"></script>
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-30K73KRYT2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-30K73KRYT2');
-</script>
-
 </head>
 
 <body>
 
-  <!-- Floating Admin Login -->
-  <a href="https://backend.rizara.co.ke/login" class="admin-btn" aria-label="Admin Login">
-    Admin Login
-  </a>
+<!-- Floating Admin Login -->
+<a href="https://backend.rizara.co.ke/login" class="admin-btn" aria-label="Admin Login">Admin Login</a>
 
-  <!-- HEADER -->
-  <header>
-    <div class="container navbar">
-      <a href="index.html" class="brand">
-        <img src="/assets/images/logo.png" alt="Rizara Meats Logo">
-        <span>Rizara Meats</span>
-      </a>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="packages.html">Products</a>
-        <a href="contact.html">Contact</a>
-        <a href="orders.html" class="nav-cta">Place Order</a>
-      </nav>
-    </div>
-  </header>
+<!-- HEADER -->
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="brand">
+      <img src="/assets/images/logo.png" alt="Rizara Meats Logo">
+      <span>Rizara Meats</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="packages.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="orders.html" class="nav-cta">Place Order</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- CONTACT SECTION -->
-  <section class="container mt-12 max-w-lg mx-auto">
-    <h1 class="hero-text text-center">Get In Touch</h1>
-    <p class="text-center">
-      Reach out for inquiries, bulk orders, livestock onboarding, or partnerships.
+<!-- HERO -->
+<section class="hero container">
+  <div>
+    <h1 class="hero-text">Get in Touch</h1>
+    <p>
+      Reach out to Rizara Meats for bulk halal meat orders, partnerships, or export inquiries.
+      We specialize in goat and sheep meat sourced ethically from East Africa, fully traceable, and compliant with GCC halal standards.
     </p>
+  </div>
+  <div>
+    <img src="/assets/images/contact.jpg" alt="Contact Rizara Meats">
+  </div>
+</section>
 
-    <form class="mt-6" action="/submit-contact" method="POST">
+<!-- CONTACT DETAILS -->
+<section class="container mt-12">
+  <h2 class="hero-text text-center">Contact Details</h2>
+  <div class="grid-2 mt-6">
+    <div>
+      <p><strong>Phone:</strong> +254 700 912 362 / +254 780 912 362</p>
+      <p><strong>Email:</strong> <a href="mailto:sales@rizara.co.ke" class="text-link">sales@rizara.co.ke</a></p>
+      <p><strong>Address:</strong> P.O. BOX 25399-00100, GPO Nairobi, Kenya</p>
+    </div>
+    <div>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5279340120596!2d36.81722321533476!3d-1.2833349999819244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f173b8a5f25bb%3A0xd7f2b3a13e8b9c4c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1600000000000" 
+        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
 
-      <input type="text" name="name" placeholder="Your Name" class="input-field" required>
-      <input type="email" name="email" placeholder="Email Address" class="input-field" required>
-      <input type="tel" name="phone" placeholder="Phone Number" class="input-field" required>
-      <textarea name="message" rows="5" placeholder="Your Message" class="input-field" required></textarea>
+<!-- CONTACT FORM -->
+<section class="container mt-12 max-w-lg mx-auto">
+  <h2 class="hero-text text-center">Send Us a Message</h2>
+  <form class="mt-6" action="/submit-contact" method="POST">
+    <input type="text" name="name" placeholder="Your Name" class="input-field" required>
+    <input type="email" name="email" placeholder="Email" class="input-field" required>
+    <input type="tel" name="phone" placeholder="Phone Number" class="input-field" required>
+    <textarea name="message" rows="5" placeholder="Your Message" class="input-field" required></textarea>
 
-      <!-- Honeypot (spam trap) -->
-      <input type="text" name="hp_field" class="hp-field">
+    <!-- Honeypot Field -->
+    <input type="text" name="hp_field" class="hp-field">
 
-      <!-- reCAPTCHA token -->
-      <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+    <!-- reCAPTCHA Token -->
+    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
 
-      <button type="submit" class="btn hero-button w-full">
-        Send Message
-      </button>
-    </form>
-  </section>
+    <button type="submit" class="btn hero-button w-full">Send Message</button>
+  </form>
+</section>
 
-  <!-- reCAPTCHA Script -->
-  <script>
-    grecaptcha.ready(function () {
-      grecaptcha.execute(
-        '6Lc1hEksAAAAANv17YHE_2g4smNZT4UsdjrT9SL4',
-        { action: 'contact' }
-      ).then(function (token) {
-        document.getElementById('g-recaptcha-response').value = token;
-      });
-    });
-  </script>
+<script>
+grecaptcha.ready(function() {
+  grecaptcha.execute('6Lc1hEksAAAAANv17YHE_2g4smNZT4UsdjrT9SL4', {action: 'contact'}).then(function(token) {
+      document.getElementById('g-recaptcha-response').value = token;
+  });
+});
+</script>
 
-  <!-- FOOTER -->
-  <footer>
-    &copy; 2026 Rizara Meats. All rights reserved.
-  </footer>
+<!-- CTA -->
+<section class="container mt-12 text-center">
+  <p class="hero-text">Looking for a reliable halal meat supplier for GCC or international markets? Contact us today!</p>
+  <a href="orders.html" class="hero-button">Place an Order</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    © 2026 Rizara Meats. Ethical, traceable, export-ready halal goat and sheep meat from East Africa.
+  </p>
+</footer>
 
 </body>
 </html>

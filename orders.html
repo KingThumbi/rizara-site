@@ -1,200 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Place an Order | Rizara Meats Halal Livestock & Meat Supply</title>
-  <meta name="description" content="Place an order with Rizara Meats for halal livestock or processed meat. We serve local buyers, institutions, and GCC export markets with full traceability.">
+  <title>Place an Order | Rizara Meats Halal Goat & Sheep Meat</title>
+  <meta name="description" content="Place bulk orders for halal goat and sheep meat with Rizara Meats. Export-ready, ethically sourced, fully traceable livestock from East Africa to GCC and international markets." />
+  <link rel="canonical" href="https://rizara.co.ke/orders.html" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 
-  <link rel="canonical" href="https://rizara.co.ke/orders.html">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-30K73KRYT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-30K73KRYT2');
+  </script>
 
+  <!-- reCAPTCHA -->
   <script src="https://www.google.com/recaptcha/api.js?render=6Lc1hEksAAAAANv17YHE_2g4smNZT4UsdjrT9SL4"></script>
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-30K73KRYT2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-30K73KRYT2');
-</script>
-
 </head>
 
 <body>
 
-  <!-- Floating Admin Login -->
-  <a href="https://backend.rizara.co.ke/login" class="admin-btn" aria-label="Admin Login">
-    Admin Login
-  </a>
+<!-- Floating Admin Login -->
+<a href="https://backend.rizara.co.ke/login" class="admin-btn" aria-label="Admin Login">Admin Login</a>
 
-  <!-- HEADER -->
-  <header>
-    <div class="container navbar">
-      <a href="index.html" class="brand">
-        <img src="/assets/images/logo.png" alt="Rizara Meats Logo">
-        <span>Rizara Meats</span>
-      </a>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="packages.html">Products</a>
-        <a href="contact.html">Contact</a>
-        <a href="orders.html" class="nav-cta active">Place Order</a>
-      </nav>
-    </div>
-  </header>
+<!-- HEADER -->
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="brand">
+      <img src="/assets/images/logo.png" alt="Rizara Meats Logo">
+      <span>Rizara Meats</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="packages.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="orders.html" class="nav-cta">Place Order</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- INTRO -->
-  <section class="container mt-12 text-center">
-    <h1>Place an Order</h1>
+<!-- HERO -->
+<section class="hero container">
+  <div>
+    <h1 class="hero-text">Place Your Bulk Order</h1>
     <p>
-      Rizara Meats supplies halal livestock and meat products to local buyers,
-      institutions, and international markets. Submit your order request below
-      and our team will guide you through fulfillment.
+      Rizara Meats provides ethically sourced halal goat and sheep meat for GCC and international buyers.
+      All livestock is traceable from farm to fork. Place your order below and our team will respond promptly.
     </p>
-  </section>
+  </div>
+  <div>
+    <img src="/assets/images/meat-pack.jpg" alt="Halal Meat Packages">
+  </div>
+</section>
 
-  <!-- ORDER TYPES -->
-  <section class="container mt-12">
-    <h2>Who Can Order</h2>
+<!-- ORDER FORM -->
+<section class="container mt-12 max-w-lg mx-auto">
+  <h2 class="hero-text text-center">Order Form</h2>
+  <form class="mt-6" action="/submit-order" method="POST">
+    
+    <label for="buyerName">Full Name</label>
+    <input type="text" name="buyerName" placeholder="Your Full Name" class="input-field" required>
 
-    <div class="grid lg:grid-cols-3 gap-8 mt-8">
-      <div class="card">
-        <h3>Local Buyers</h3>
-        <p>
-          Restaurants, butcheries, retailers, and households seeking reliable
-          halal meat supply within Kenya.
-        </p>
-      </div>
+    <label for="companyName">Company / Farm Name</label>
+    <input type="text" name="companyName" placeholder="Your Company or Farm Name" class="input-field">
 
-      <div class="card">
-        <h3>Institutions</h3>
-        <p>
-          Hotels, hospitals, schools, NGOs, and catering companies requiring
-          consistent bulk supply.
-        </p>
-      </div>
+    <label for="email">Email</label>
+    <input type="email" name="email" placeholder="Email Address" class="input-field" required>
 
-      <div class="card">
-        <h3>Export Buyers</h3>
-        <p>
-          GCC and international buyers sourcing export-grade halal meat with
-          documentation and traceability.
-        </p>
-      </div>
-    </div>
-  </section>
+    <label for="phone">Phone Number</label>
+    <input type="tel" name="phone" placeholder="Phone Number" class="input-field" required>
 
-  <!-- PRODUCTS -->
-  <section class="container mt-12">
-    <h2>Available Products</h2>
-    <ul class="list">
-      <li>Live livestock (goats, sheep, cattle)</li>
-      <li>Fresh halal meat (whole carcass or cuts)</li>
-      <li>Bulk institutional supply</li>
-      <li>Export-prepared chilled or frozen meat</li>
-    </ul>
-  </section>
+    <label for="product">Select Product</label>
+    <select name="product" class="input-field" required>
+      <option value="">-- Select --</option>
+      <option value="goat">Halal Goat Meat</option>
+      <option value="sheep">Halal Sheep Meat</option>
+      <!-- future options: beef, chicken, fish -->
+    </select>
 
-  <!-- PROCESS -->
-  <section class="container mt-12">
-    <h2>How Ordering Works</h2>
+    <label for="quantity">Quantity (kg)</label>
+    <input type="number" name="quantity" placeholder="Enter total weight in kg" class="input-field" required>
 
-    <div class="grid lg:grid-cols-4 gap-8 mt-8">
-      <div class="card">
-        <h3>1. Submit Request</h3>
-        <p>
-          Share your order details including quantity, product type, and delivery
-          location.
-        </p>
-      </div>
+    <label for="destination">Destination</label>
+    <input type="text" name="destination" placeholder="City / Country" class="input-field" required>
 
-      <div class="card">
-        <h3>2. Confirmation</h3>
-        <p>
-          Our team confirms availability, pricing, and timelines based on your
-          requirements.
-        </p>
-      </div>
+    <label for="message">Additional Notes / Requirements</label>
+    <textarea name="message" rows="4" placeholder="Optional message" class="input-field"></textarea>
 
-      <div class="card">
-        <h3>3. Processing</h3>
-        <p>
-          Livestock is aggregated, processed under halal standards, and prepared
-          for delivery.
-        </p>
-      </div>
+    <!-- Honeypot field for spam -->
+    <input type="text" name="hp_field" class="hp-field">
 
-      <div class="card">
-        <h3>4. Delivery</h3>
-        <p>
-          Orders are delivered locally or prepared for export with cold-chain
-          logistics.
-        </p>
-      </div>
-    </div>
-  </section>
+    <!-- reCAPTCHA token -->
+    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
 
-  <!-- ORDER FORM -->
-  <section class="container mt-12 max-w-xl mx-auto">
-    <h2 class="text-center">Order Request Form</h2>
-    <p class="text-center">
-      Complete the form below and our team will respond promptly.
-    </p>
+    <button type="submit" class="btn hero-button w-full mt-4">Submit Order</button>
+  </form>
+</section>
 
-    <form class="mt-6" action="/submit-order" method="POST">
+<script>
+grecaptcha.ready(function() {
+  grecaptcha.execute('6Lc1hEksAAAAANv17YHE_2g4smNZT4UsdjrT9SL4', {action: 'order'}).then(function(token) {
+      document.getElementById('g-recaptcha-response').value = token;
+  });
+});
+</script>
 
-      <input type="text" name="name" placeholder="Full Name / Company Name" class="input-field" required>
-      <input type="email" name="email" placeholder="Email Address" class="input-field" required>
-      <input type="tel" name="phone" placeholder="Phone Number" class="input-field" required>
+<!-- CTA -->
+<section class="container mt-12 text-center">
+  <p class="hero-text">Looking for a reliable halal meat supplier for GCC or international markets? Contact us today!</p>
+  <a href="contact.html" class="hero-button">Contact Sales Team</a>
+</section>
 
-      <select name="buyer_type" class="input-field" required>
-        <option value="">Buyer Type</option>
-        <option value="local">Local Buyer</option>
-        <option value="institution">Institution</option>
-        <option value="export">Export Buyer</option>
-      </select>
-
-      <select name="product" class="input-field" required>
-        <option value="">Product Type</option>
-        <option value="live">Live Livestock</option>
-        <option value="fresh">Fresh Meat</option>
-        <option value="bulk">Bulk Supply</option>
-        <option value="export">Export Meat</option>
-      </select>
-
-      <textarea name="details" rows="5" placeholder="Quantity, preferred cuts, delivery location, or export destination" class="input-field" required></textarea>
-
-      <!-- Honeypot -->
-      <input type="text" name="hp_field" class="hp-field">
-
-      <!-- reCAPTCHA token -->
-      <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-
-      <button type="submit" class="btn hero-button w-full">
-        Submit Order Request
-      </button>
-    </form>
-  </section>
-
-  <!-- reCAPTCHA Script -->
-  <script>
-    grecaptcha.ready(function () {
-      grecaptcha.execute('6Lc1hEksAAAAANv17YHE_2g4smNZT4UsdjrT9SL4', { action: 'order' })
-        .then(function (token) {
-          document.getElementById('g-recaptcha-response').value = token;
-        });
-    });
-  </script>
-
-  <!-- FOOTER -->
-  <footer>
-    &copy; 2026 Rizara Meats. All rights reserved.
-  </footer>
+<!-- FOOTER -->
+<footer>
+  <p>
+    © 2026 Rizara Meats. Ethical, traceable, export-ready halal goat and sheep meat from East Africa.
+  </p>
+</footer>
 
 </body>
 </html>
