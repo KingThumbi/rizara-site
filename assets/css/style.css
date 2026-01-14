@@ -1,227 +1,241 @@
-/* ==========================================
-   RIZARA MEATS - GLOBAL VARIABLES
-   ========================================== */
+/* ===========================
+   Rizara Site Stylesheet
+   =========================== */
+
+/* Root Colors */
 :root {
-  --brand-green: #006400;   /* Dark Green */
-  --brand-gold: #ffd700;    /* Gold */
-  --text-dark: #1a1a1a;
-  --bg-light: #ffffff;
-  --shadow: rgba(0, 0, 0, 0.1);
-  --rounded: 0.75rem;
+  --brand-green: #1E4D2B;
+  --brand-gold: #FFD700;
+  --white: #FFFFFF;
+  --gray-light: #F5F5F5;
+  --gray-dark: #333;
 }
 
-/* ==========================================
-   GLOBAL ELEMENTS
-   ========================================== */
-body {
-  font-family: 'Inter', sans-serif;
-  color: var(--text-dark);
-  background-color: var(--bg-light);
+/* Reset */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-h1, h2, h3, h4, h5 {
-  color: var(--brand-green);
-}
-
-h1 { font-size: 2rem; }
-h2 { font-size: 1.75rem; }
-h3 { font-size: 1.5rem; }
-p, li, input, textarea, select {
-  font-size: 1rem;
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--gray-dark);
   line-height: 1.6;
+  background-color: var(--white);
 }
 
-/* ==========================================
-   HEADER & NAVIGATION
-   ========================================== */
+/* Containers */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===========================
+   Navbar
+   =========================== */
 header {
+  background-color: var(--brand-green);
+  color: white;
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: var(--brand-green);
-  color: white;
-  box-shadow: 0 2px 6px var(--shadow);
 }
 
-header nav a {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.brand img {
+  height: 50px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.brand img:hover {
+  transform: rotate(-10deg) scale(1.05);
+}
+
+.nav-links a {
+  margin-left: 1.2rem;
+  text-decoration: none;
   color: white;
   font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-header nav a:hover {
+.nav-links a:hover {
   color: var(--brand-gold);
 }
 
-header .btn {
+.nav-cta {
   background-color: var(--brand-gold);
   color: var(--brand-green);
   padding: 0.5rem 1rem;
-  border-radius: var(--rounded);
-  font-weight: 600;
-  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  font-weight: bold;
 }
 
-header .btn:hover {
-  background-color: #ffec70;
+.nav-cta:hover {
+  background-color: #ffdf4d;
 }
 
-/* ==========================================
-   LOGO
-   ========================================== */
-.logo {
-  height: 40px;
-  width: auto;
-}
-
-/* ==========================================
-   HERO TEXT
-   ========================================== */
+/* ===========================
+   Hero Section
+   =========================== */
 .hero-text {
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  color: var(--brand-green);
-  text-align: center;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
 }
 
-/* ==========================================
-   BUTTONS
-   ========================================== */
-.btn, .hero-button {
-  display: inline-block;
-  background-color: var(--brand-green);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--rounded);
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
+section.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4rem 0;
+  gap: 2rem;
 }
 
-.hero-button:hover, .btn:hover {
-  background-color: var(--brand-gold);
-  color: var(--brand-green);
-}
-
-/* ==========================================
-   FORMS
-   ========================================== */
-.input-field {
+section.hero img {
+  border-radius: 1.5rem;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
   width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1px solid #ccc;
-  border-radius: var(--rounded);
-  font-size: 1rem;
-  outline: none;
-  transition: border 0.3s ease, box-shadow 0.3s ease;
+  max-width: 500px;
 }
 
-.input-field:focus {
-  border-color: var(--brand-green);
-  box-shadow: 0 0 6px var(--brand-green);
-}
-
-/* ==========================================
-   CARDS
-   ========================================== */
+/* ===========================
+   Cards
+   =========================== */
 .card {
-  background-color: var(--bg-light);
-  border-radius: var(--rounded);
-  box-shadow: 0 4px 12px var(--shadow);
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 18px var(--shadow);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
+.card img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+/* ===========================
+   Buttons
+   =========================== */
+.btn, .hero-button {
+  background-color: var(--brand-green);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover, .hero-button:hover {
+  background-color: var(--brand-gold);
+  color: var(--brand-green);
+}
+
+.hero-button {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.85rem 2rem;
+}
+
+/* ===========================
+   Forms
+   =========================== */
+form {
+  margin-top: 2rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  transition: border 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--brand-green);
+}
+
+/* Honeypot field (hidden) */
+.hp-field {
+  display: none;
+}
+
+/* ===========================
+   Footer
+   =========================== */
 footer {
   background-color: var(--brand-green);
   color: white;
   text-align: center;
   padding: 1.5rem 0;
-  font-size: 0.95rem;
 }
 
-/* ==========================================
-   FLOATING ADMIN LOGIN
-   ========================================== */
-.admin-float {
+/* ===========================
+   Admin Floating Button
+   =========================== */
+.admin-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
   background-color: var(--brand-green);
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: var(--rounded);
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 4px 12px var(--shadow);
-  transition: all 0.3s ease;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
   z-index: 1000;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.admin-float:hover {
+.admin-btn:hover {
   background-color: var(--brand-gold);
   color: var(--brand-green);
-  transform: translateY(-2px);
+  transform: scale(1.1);
 }
 
-/* ==========================================
-   TABLES / LISTS
-   ========================================== */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1rem;
-}
+/* ===========================
+   Responsive
+   =========================== */
+@media (max-width: 1024px) {
+  section.hero {
+    flex-direction: column;
+  }
 
-table th, table td {
-  border: 1px solid #ccc;
-  padding: 0.75rem 1rem;
-  text-align: left;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-/* ==========================================
-   CUSTOM CLASSES
-   ========================================== */
-.rounded-xl-custom {
-  border-radius: 1rem;
-}
-
-.shadow-lg-custom {
-  box-shadow: 0 8px 20px var(--shadow);
-}
-
-.text-center {
-  text-align: center;
-}
-
-.max-w-lg {
-  max-width: 36rem;
-}
-
-.container {
-  width: 95%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
 }

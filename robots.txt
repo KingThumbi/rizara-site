@@ -1,0 +1,6 @@
+# Allow all web crawlers except the admin backend
+User-agent: *
+Disallow: /backend.rizara.co.ke/
+Allow: /
+
+Sitemap: https://rizara.co.ke/sitemap.xml

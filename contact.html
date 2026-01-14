@@ -3,51 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Rizara Meats</title>
-  <link rel="icon" href="assets/favicon/favicon.ico">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Contact Rizara | Partnerships & Supply Inquiries</title>
+  <meta name="description" content="Contact Rizara for partnerships, livestock onboarding, bulk meat supply, or investment discussions.">
+
+  <link rel="canonical" href="https://rizara.co.ke/contact.html">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Google reCAPTCHA v3 -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6Lc1hEksAAAAANv17YHE_2g4smNZT4UsdjrT9SL4"></script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-30K73KRYT2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-30K73KRYT2');
+</script>
+
 </head>
-<body class="font-sans text-gray-900 bg-white">
 
-<!-- HEADER -->
-<header class="bg-[var(--brand-green)] text-white shadow-md sticky top-0 z-50">
-  <div class="container mx-auto flex flex-wrap justify-between items-center px-6 py-4">
-    <a href="index.html" class="flex items-center gap-3">
-      <img src="assets/images/logo.png" alt="Rizara Meats Logo" class="logo h-10 w-auto">
-      <span class="text-xl font-bold">Rizara Meats</span>
-    </a>
-    <nav class="flex flex-wrap gap-4 items-center">
-      <a href="index.html" class="hover:text-[var(--brand-gold)] font-medium">Home</a>
-      <a href="about.html" class="hover:text-[var(--brand-gold)] font-medium">About</a>
-      <a href="packages.html" class="hover:text-[var(--brand-gold)] font-medium">Products</a>
-      <a href="contact.html" class="hover:text-[var(--brand-gold)] font-medium">Contact</a>
-      <a href="orders.html" class="bg-[var(--brand-gold)] text-[var(--brand-green)] px-4 py-2 rounded font-semibold hover:bg-yellow-400">Place Order</a>
-    </nav>
-  </div>
-</header>
+<body>
 
-<section class="container mx-auto px-6 py-16 max-w-2xl">
-  <h2 class="text-4xl font-bold text-[var(--brand-green)] mb-6 text-center hero-text">Contact Us</h2>
-  <p class="mb-6 text-lg text-center">Reach out to Rizara Meats for orders, partnerships, or inquiries.</p>
+  <!-- Floating Admin Login -->
+  <a href="https://backend.rizara.co.ke/login" class="admin-btn" aria-label="Admin Login">
+    Admin Login
+  </a>
 
-  <div class="mb-8 space-y-2 text-center">
-    <p><strong>Phone:</strong> +254 700 912 362 / +254 780 912 362</p>
-    <p><strong>Email:</strong> <a href="mailto:sales@rizara.co.ke" class="text-[var(--brand-green)] underline">sales@rizara.co.ke</a></p>
-    <p><strong>Postal Address:</strong> P.O BOX 25399-00100, GPO Nairobi</p>
-  </div>
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="brand">
+        <img src="/assets/images/logo.png" alt="Rizara Meats Logo">
+        <span>Rizara Meats</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="packages.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="orders.html" class="nav-cta">Place Order</a>
+      </nav>
+    </div>
+  </header>
 
-  <form class="space-y-4 max-w-lg mx-auto">
-    <input type="text" placeholder="Your Name" class="input-field" required>
-    <input type="email" placeholder="Email" class="input-field" required>
-    <input type="tel" placeholder="Phone Number" class="input-field" required>
-    <textarea placeholder="Your Message" rows="5" class="input-field" required></textarea>
-    <button type="submit" class="btn hero-button w-full">Send Message</button>
-  </form>
-</section>
+  <!-- CONTACT SECTION -->
+  <section class="container mt-12 max-w-lg mx-auto">
+    <h1 class="hero-text text-center">Get In Touch</h1>
+    <p class="text-center">
+      Reach out for inquiries, bulk orders, livestock onboarding, or partnerships.
+    </p>
 
-<footer class="bg-[var(--brand-green)] text-white py-6 text-center">
-  &copy; 2026 Rizara Meats. All rights reserved.
-</footer>
+    <form class="mt-6" action="/submit-contact" method="POST">
+
+      <input type="text" name="name" placeholder="Your Name" class="input-field" required>
+      <input type="email" name="email" placeholder="Email Address" class="input-field" required>
+      <input type="tel" name="phone" placeholder="Phone Number" class="input-field" required>
+      <textarea name="message" rows="5" placeholder="Your Message" class="input-field" required></textarea>
+
+      <!-- Honeypot (spam trap) -->
+      <input type="text" name="hp_field" class="hp-field">
+
+      <!-- reCAPTCHA token -->
+      <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
+      <button type="submit" class="btn hero-button w-full">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- reCAPTCHA Script -->
+  <script>
+    grecaptcha.ready(function () {
+      grecaptcha.execute(
+        '6Lc1hEksAAAAANv17YHE_2g4smNZT4UsdjrT9SL4',
+        { action: 'contact' }
+      ).then(function (token) {
+        document.getElementById('g-recaptcha-response').value = token;
+      });
+    });
+  </script>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2026 Rizara Meats. All rights reserved.
+  </footer>
+
 </body>
 </html>

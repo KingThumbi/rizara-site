@@ -3,66 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Products | Rizara Meats</title>
-  <link rel="icon" href="assets/favicon/favicon.ico">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Products & Supply Packages | Rizara Meats Halal Livestock</title>
+  <meta name="description" content="Explore Rizara Meats livestock and halal meat supply packages for local buyers, institutions, and export markets with full traceability.">
+
+  <link rel="canonical" href="https://rizara.co.ke/packages.html">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-30K73KRYT2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-30K73KRYT2');
+</script>
+
 </head>
-<body class="font-sans text-gray-900 bg-white">
 
-<!-- HEADER -->
-<header class="bg-[var(--brand-green)] text-white shadow-md sticky top-0 z-50">
-  <div class="container mx-auto flex flex-wrap justify-between items-center px-6 py-4">
-    <a href="index.html" class="flex items-center gap-3">
-      <img src="assets/images/logo.png" alt="Rizara Meats Logo" class="logo h-10 w-auto">
-      <span class="text-xl font-bold">Rizara Meats</span>
+<body>
+
+  <!-- Floating Admin Login -->
+  <a href="https://backend.rizara.co.ke/login" class="admin-btn" aria-label="Admin Login">
+    Admin Login
+  </a>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="brand">
+        <img src="/assets/images/logo.png" alt="Rizara Meats Logo">
+        <span>Rizara Meats</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="packages.html" class="active">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="orders.html" class="nav-cta">Place Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="container mt-12 text-center">
+    <h1>Our Products & Supply Packages</h1>
+    <p>
+      Rizara Meats offers a wide range of halal livestock and meat supply solutions
+      tailored for households, institutions, and international buyers.
+      All products are ethically sourced, halal-certified, and fully traceable.
+    </p>
+  </section>
+
+  <!-- LIVESTOCK -->
+  <section class="container mt-12">
+    <h2>Live Livestock Supply</h2>
+    <p>
+      We aggregate livestock from vetted farmers across Kenya, ensuring animal
+      health, welfare, and compliance with halal standards.
+    </p>
+
+    <div class="grid lg:grid-cols-3 gap-8 mt-8">
+      <div class="card">
+        <h3>Goats</h3>
+        <p>
+          Ideal for local consumption and export markets. Raised in semi-arid
+          regions with strong disease management.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Sheep</h3>
+        <p>
+          High-quality breeds suitable for premium meat production and seasonal
+          demand peaks.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Cattle</h3>
+        <p>
+          Carefully selected cattle for institutional buyers and bulk processing
+          requirements.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEAT PRODUCTS -->
+  <section class="container mt-12">
+    <h2>Processed Halal Meat</h2>
+    <p>
+      Our meat is processed under strict halal supervision and prepared for both
+      domestic and international distribution.
+    </p>
+
+    <div class="grid lg:grid-cols-3 gap-8 mt-8">
+      <div class="card">
+        <h3>Fresh Meat</h3>
+        <p>
+          Whole carcasses or customized cuts delivered fresh to butcheries,
+          restaurants, and institutions.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Bulk Institutional Supply</h3>
+        <p>
+          Reliable, recurring supply for hotels, hospitals, schools, and NGOs with
+          consistent quality.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Export-Ready Meat</h3>
+        <p>
+          Chilled or frozen meat prepared for GCC and international markets with
+          required documentation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUYER SEGMENTS -->
+  <section class="container mt-12">
+    <h2>Packages by Buyer Type</h2>
+
+    <div class="grid lg:grid-cols-3 gap-8 mt-8">
+      <div class="card">
+        <h3>Local Buyers</h3>
+        <ul class="list">
+          <li>Small to medium quantities</li>
+          <li>Flexible delivery schedules</li>
+          <li>Fresh halal meat</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Institutions</h3>
+        <ul class="list">
+          <li>Bulk pricing</li>
+          <li>Contract-based supply</li>
+          <li>Quality assurance</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Export Buyers</h3>
+        <ul class="list">
+          <li>Traceable livestock sourcing</li>
+          <li>Export documentation</li>
+          <li>Cold-chain logistics</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRACEABILITY -->
+  <section class="container mt-12 text-center">
+    <h2>Traceability & Transparency</h2>
+    <p>
+      Every animal supplied through Rizara Meats is tracked from farm to processing.
+      Buyers can trust our systems for ethical sourcing, halal compliance, and
+      supply chain visibility.
+    </p>
+  </section>
+
+  <!-- CTA -->
+  <section class="container mt-12 text-center">
+    <a href="orders.html" class="btn hero-button">
+      Request a Supply Package
     </a>
-    <nav class="flex flex-wrap gap-4 items-center">
-      <a href="index.html" class="hover:text-[var(--brand-gold)] font-medium">Home</a>
-      <a href="about.html" class="hover:text-[var(--brand-gold)] font-medium">About</a>
-      <a href="packages.html" class="hover:text-[var(--brand-gold)] font-medium">Products</a>
-      <a href="contact.html" class="hover:text-[var(--brand-gold)] font-medium">Contact</a>
-      <a href="orders.html" class="bg-[var(--brand-gold)] text-[var(--brand-green)] px-4 py-2 rounded font-semibold hover:bg-yellow-400">Place Order</a>
-    </nav>
-  </div>
-</header>
+  </section>
 
-<section class="container mx-auto px-6 py-16">
-  <h2 class="text-4xl font-bold text-[var(--brand-green)] mb-12 text-center hero-text">Our Products</h2>
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2026 Rizara Meats. All rights reserved.
+  </footer>
 
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-    <div class="card p-6 border rounded-xl shadow-lg text-center">
-      <img src="assets/images/goat-meat.jpg" alt="Goat Meat" class="mx-auto mb-4 rounded-lg">
-      <h3 class="text-xl font-bold mb-2">Halal Goat Meat</h3>
-      <p class="mb-4">Premium goat meat, ethically sourced and halal certified. Available in different cuts or whole carcasses.</p>
-      <a href="orders.html" class="btn hero-button">Order Now</a>
-    </div>
-
-    <div class="card p-6 border rounded-xl shadow-lg text-center">
-      <img src="assets/images/sheep-meat.jpg" alt="Sheep Meat" class="mx-auto mb-4 rounded-lg">
-      <h3 class="text-xl font-bold mb-2">Halal Sheep Meat</h3>
-      <p class="mb-4">High-quality sheep meat, processed under strict halal compliance for local and GCC buyers.</p>
-      <a href="orders.html" class="btn hero-button">Order Now</a>
-    </div>
-
-    <div class="card p-6 border rounded-xl shadow-lg text-center">
-      <img src="assets/images/live-livestock.jpg" alt="Live Livestock" class="mx-auto mb-4 rounded-lg">
-      <h3 class="text-xl font-bold mb-2">Live Livestock</h3>
-      <p class="mb-4">Direct from farms: goats, sheep, and other livestock for farms, hotels, or bulk buyers.</p>
-      <a href="orders.html" class="btn hero-button">Order Now</a>
-    </div>
-
-    <div class="card p-6 border rounded-xl shadow-lg text-center">
-      <img src="assets/images/meat-pack.jpg" alt="Meat Pack" class="mx-auto mb-4 rounded-lg">
-      <h3 class="text-xl font-bold mb-2">Meat Packs</h3>
-      <p class="mb-4">Convenient pre-packaged meat portions for retail, hospitality, and export purposes.</p>
-      <a href="orders.html" class="btn hero-button">Order Now</a>
-    </div>
-  </div>
-</section>
-
-<footer class="bg-[var(--brand-green)] text-white py-6 text-center">
-  &copy; 2026 Rizara Meats. All rights reserved.
-</footer>
 </body>
 </html>
